@@ -15,38 +15,78 @@ A simple, yet powerful command-line utility to **automatically organize your fil
 
 ## 🚀 Installation
 
-You can install `file-organizer-cli` directly from PyPI using `pip`:
+### Clone from GitHub
+
+First, clone the repository:
 
 ```bash
-pip install file-organizer-cli
+git clone https://github.com/yourusername/file-organizer-cli.git
+cd file-organizer-cli
 ```
+
+### Set Up a Virtual Environment (Recommended)
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### Install Dependencies
+
+If there is a `requirements.txt` file, install dependencies with:
+
+```bash
+pip install -r requirements.txt
+```
+
+### Run the CLI
+
+You can run the CLI directly using Python:
+
+```bash
+PYTHONPATH=src python3 -m file_organizer.cli /path/to/your/messy_folder
+```
+
+Or, for a dry run:
+
+```bash
+PYTHONPATH=src python3 -m file_organizer.cli /path/to/your/messy_folder --dry-run
+```
+
+Or with verbose output:
+
+```bash
+PYTHONPATH=src python3 -m file_organizer.cli /path/to/your/messy_folder -v
+```
+
+You can combine options as needed.
 
 ## 💡 Usage
 
-Once installed, you can use the `organize-files` command directly from your terminal.
+Once installed, you can use the `organize-files` command directly from your terminal if installed via PyPI, or use the Python module as shown above if cloned from GitHub.
 
 ### Basic Usage
 
 To organize files in a directory, simply provide the path to that directory:
 
 ```bash
-organize-files /path/to/your/messy_folder
+PYTHONPATH=src python3 -m file_organizer.cli /path/to/your/messy_folder
 ```
 
 For example, to organize your Downloads folder:
 
 ```bash
-organize-files ~/Downloads
+PYTHONPATH=src python3 -m file_organizer.cli ~/Downloads
 ```
 
-(On Windows, this might be `organize-files C:\Users\YourUser\Downloads`)
+(On Windows, this might be `PYTHONPATH=src python -m file_organizer.cli C:\Users\YourUser\Downloads`)
 
 ### Dry Run (Recommended First Step!)
 
 Always use the `--dry-run` flag first to see exactly what changes will be made without actually moving any files. This is a great way to verify the tool's behavior before committing to changes.
 
 ```bash
-organize-files /path/to/your/messy_folder --dry-run
+PYTHONPATH=src python3 -m file_organizer.cli /path/to/your/messy_folder --dry-run
 ```
 
 ### Verbose Output
@@ -54,7 +94,7 @@ organize-files /path/to/your/messy_folder --dry-run
 Use the `-v` or `--verbose` flag to get detailed information about each file being processed and its destination.
 
 ```bash
-organize-files /path/to/your/messy_folder -v
+PYTHONPATH=src python3 -m file_organizer.cli /path/to/your/messy_folder -v
 ```
 
 ### Combining Options
@@ -62,7 +102,7 @@ organize-files /path/to/your/messy_folder -v
 You can combine options. For instance, to see a verbose dry run:
 
 ```bash
-organize-files /path/to/your/messy_folder --dry-run -v
+PYTHONPATH=src python3 -m file_organizer.cli /path/to/your/messy_folder --dry-run -v
 ```
 
 ## 🗂️ Categories
@@ -95,14 +135,14 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 📧 Contact
 
-If you have any questions or feedback, feel free to open an issue on the GitHub repository or reach out to [Your Name/Your Email Address].
+If you have any questions or feedback, feel free to open an issue on the [GitHub repository](https://github.com/yourusername/file-organizer-cli) or reach out to [Your Name/Your Email Address].
 
 ### How to Use This `README.md` Content:
 
 1. **Create `README.md`:** Save the content above into a file named `README.md` in the **root directory** of your project (`file_organizer_cli/README.md`).
 2. **Customize:**
     - Replace `[Your Name/Your Email Address]` in the "Contact" section.
-    - Consider adding a link to your GitHub repository if it's hosted there.
+    - Replace `yourusername` in GitHub URLs with your actual GitHub username.
     - If you have a `LICENSE` file, ensure it's present in your root directory.
     - Update the PyPI version badge if you change your project's version.
 
