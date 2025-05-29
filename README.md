@@ -136,14 +136,3 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## 📧 Contact
 
 If you have any questions or feedback, feel free to open an issue on the [GitHub repository](https://github.com/yourusername/file-organizer-cli) or reach out to [Your Name/Your Email Address].
-
-### How to Use This `README.md` Content:
-
-1. **Create `README.md`:** Save the content above into a file named `README.md` in the **root directory** of your project (`file_organizer_cli/README.md`).
-2. **Customize:**
-    - Replace `[Your Name/Your Email Address]` in the "Contact" section.
-    - Replace `yourusername` in GitHub URLs with your actual GitHub username.
-    - If you have a `LICENSE` file, ensure it's present in your root directory.
-    - Update the PyPI version badge if you change your project's version.
-
-With a solid test suite and a comprehensive `README.md`, your project will be much more robust and user-friendly!
