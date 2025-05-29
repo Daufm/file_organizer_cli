@@ -20,7 +20,7 @@ A simple, yet powerful command-line utility to **automatically organize your fil
 First, clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/file-organizer-cli.git
+git clone https://github.com/Daufm/file_organizer_cli.git
 cd file-organizer-cli
 ```
 
