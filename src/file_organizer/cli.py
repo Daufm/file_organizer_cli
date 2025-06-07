@@ -7,6 +7,7 @@ from .core import organize_files
 def main():
     parser = argparse.ArgumentParser(
         description="Organize files in a directory based on their extensions."
+        
     )
     parser.add_argument(
         "directory",
